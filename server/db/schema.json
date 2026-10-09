@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "collections": {
+    "notes": {
+      "fields": {
+        "title": {
+          "type": "string",
+          "required": true
+        },
+        "content": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "json"
+        }
+      },
+      "owner": "shared",
+      "description": "User's quick text notes"
+    },
+    "tags": {
+      "fields": {
+        "name": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "owner": "shared",
+      "description": "Tags for organizing notes"
+    },
+    "searchHistory": {
+      "fields": {
+        "query": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "owner": "shared",
+      "description": "Recent search terms"
+    }
+  }
+}
